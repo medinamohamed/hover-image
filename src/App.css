@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Culture Bold';
+  src: url('./fonts/Culture/other/culture-bold-webfont.ttf') format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
+@font-face {
+  font-family: 'Culture Regular';
+  src: url('fonts/Culture/other/culture-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Classico Regular';
+  src: url('fonts/Classico/other/classico-webfont.woff') format('truetype');
+}
+
+body {
+  margin:0;
+  padding:0;
+}
+
+h2 {
+  font-size: 4.5em;
+  font-weight:200;
+  font-family: 'Culture Regular', Arial, sans-serif;
+}
+
+.Work{
+  margin:2em;
+}
+
+.project-name{
+  font-family: 'Classico Regular',Arial,sans-serif;
+  font-size: 3em;
+}
+.project-name:hover{
+  font-style: italic;
+}
+
+.project-line{
+  border-top: 1px solid #ccc;
+  margin: 10px 0 10px 0;
+}
+
+.cursor-follow {
+  position: absolute;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+  /* border-radius: 7.5%; */
+  user-select: none;
   pointer-events: none;
-}
+  transform: translate(5px, 5px);
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  background-position: center;
+  pointer-events: none;
+  transition: all 0.1s ease;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
